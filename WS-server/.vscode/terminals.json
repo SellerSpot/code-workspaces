@@ -1,0 +1,36 @@
+{
+  "autorun": false,
+  "autoKill": true,
+  "terminals": [
+    {
+      "name": "database-models",
+      "cwd": "../../database-models",
+      "open": true,
+      "command": "npm run dev"
+    },
+    {
+      "name": "universal-types",
+      "cwd": "../../universal-types",
+      "open": true,
+      "command": "npm run dev"
+    },
+    {
+      "name": "universal-functions",
+      "cwd": "../../universal-functions",
+      "open": true,
+      "command": "npm run dev"
+    },
+    {
+      "name": "proxy-server",
+      "cwd": "../../proxy-server",
+      "open": true,
+      "commands": ["npm run dev"]
+    },
+    {
+      "name": "auth-server",
+      "cwd": "../../auth-server",
+      "open": true,
+      "commands": ["npm run dev"]
+    }
+  ]
+}
