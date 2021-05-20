@@ -97,19 +97,25 @@
     },
 
     {
-      "name": "Kill all ports",
+      "name": "Yalc link all",
       "commands": [
-        "fuser -n tcp -k 4500 ",
-        "fuser -n tcp -k 4501",
-        "fuser -n tcp -k 4502",
-        "fuser -n tcp -k 4503",
-        "fuser -n tcp -k 4504",
-        "fuser -n tcp -k 4505",
-        "fuser -n tcp -k 4506",
+        "npm run yalc:link --prefix ../../database-models",
+        "npm run yalc:link --prefix ../../universal-types",
+        "npm run yalc:link --prefix ../../universal-functions",
+        "npm run yalc:link --prefix ../../proxy-server",
+        "npm run yalc:link --prefix ../../auth-server",
         "exit"
       ],
       "onlySingle": true,
       "open": true
+    },
+
+    {
+      "name": "Kill all ports",
+      "commands": ["npx kill-port 4500 4501 4502 4503 4504 4505 4506", "exit"],
+      "onlySingle": true,
+      "open": true,
+      "envInherit": true
     }
   ]
 }
