@@ -1,0 +1,75 @@
+{
+  "autorun": false,
+  "autoKill": true,
+  "terminals": [
+    {
+      "name": "universal-components",
+      "cwd": "../../universal-components",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
+    {
+      "name": "accounts-app",
+      "cwd": "../../accounts-app",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
+    {
+      "name": "core-app",
+      "cwd": "../../core-app",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
+
+    {
+      "name": "Sync upstream master",
+      "commands": [
+        "git -C ../../universal-components pull upstream master",
+        "git -C ../../accounts-app pull upstream master",
+        "git -C ../../core-app pull upstream master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Sync origin master",
+      "commands": [
+        "git -C ../../universal-components pull origin master",
+        "git -C ../../accounts-app pull origin master",
+        "git -C ../../core-app pull origin master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Git push all",
+      "commands": [
+        "git -C ../../universal-components push --all",
+        "git -C ../../accounts-app push --all",
+        "git -C ../../core-app push --all",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Npm install",
+      "commands": [
+        "npm ci --prefix ../../universal-components || npm install --prefix ../../universal-components",
+        "npm ci --prefix ../../accounts-app || npm install --prefix ../../accounts-app",
+        "npm ci --prefix ../../core-app || npm install --prefix ../../core-app",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    }
+  ]
+}

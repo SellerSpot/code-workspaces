@@ -1,0 +1,29 @@
+{
+  "folders": [
+    {
+      "name": "client-workspace",
+      "path": "."
+    },
+    {
+      "name": "universal-components",
+      "path": "../../universal-components"
+    },
+    {
+      "name": "accounts-app",
+      "path": "../../accounts-app"
+    },
+    {
+      "name": "core-app",
+      "path": "../../core-app"
+    },
+    {
+      "name": "landing-app",
+      "path": "../../landing-app"
+    },
+    {
+      "name": "ecom-app",
+      "path": "../../ecom-app"
+    }
+  ],
+  "settings": {}
+}
