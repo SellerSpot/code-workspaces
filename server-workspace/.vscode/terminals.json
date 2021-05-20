@@ -41,6 +41,7 @@
     {
       "name": "Sync upstream master",
       "commands": [
+        "git -C ../../code-workspaces pull upstream master",
         "git -C ../../database-models pull upstream master",
         "git -C ../../universal-types pull upstream master",
         "git -C ../../universal-functions pull upstream master",
@@ -55,6 +56,7 @@
     {
       "name": "Sync origin master",
       "commands": [
+        "git -C ../../code-workspaces pull origin master",
         "git -C ../../database-models pull origin master",
         "git -C ../../universal-types pull origin master",
         "git -C ../../universal-functions pull origin master",
