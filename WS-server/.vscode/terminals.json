@@ -6,31 +6,108 @@
       "name": "database-models",
       "cwd": "../../database-models",
       "open": true,
+      "onlyMultiple": true,
       "command": "npm run dev"
     },
     {
       "name": "universal-types",
       "cwd": "../../universal-types",
       "open": true,
+      "onlyMultiple": true,
       "command": "npm run dev"
     },
     {
       "name": "universal-functions",
       "cwd": "../../universal-functions",
       "open": true,
+      "onlyMultiple": true,
       "command": "npm run dev"
     },
     {
       "name": "proxy-server",
       "cwd": "../../proxy-server",
       "open": true,
-      "commands": ["npm run dev"]
+      "onlyMultiple": true,
+      "command": "npm run dev"
     },
     {
       "name": "auth-server",
       "cwd": "../../auth-server",
       "open": true,
-      "commands": ["npm run dev"]
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
+
+    {
+      "name": "Sync upstream master",
+      "commands": [
+        "git -C ../../database-models pull upstream master",
+        "git -C ../../universal-types pull upstream master",
+        "git -C ../../universal-functions pull upstream master",
+        "git -C ../../proxy-server pull upstream master",
+        "git -C ../../auth-server pull upstream master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Sync origin master",
+      "commands": [
+        "git -C ../../database-models pull origin master",
+        "git -C ../../universal-types pull origin master",
+        "git -C ../../universal-functions pull origin master",
+        "git -C ../../proxy-server pull origin master",
+        "git -C ../../auth-server pull origin master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Git push all",
+      "commands": [
+        "git -C ../../database-models push --all",
+        "git -C ../../universal-types push --all",
+        "git -C ../../universal-functions push --all",
+        "git -C ../../proxy-server push --all",
+        "git -C ../../auth-server push --all",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Npm install",
+      "commands": [
+        "npm ci --prefix ../../database-models || npm install --prefix ../../database-models",
+        "npm ci --prefix ../../universal-types || npm install --prefix ../../universal-types",
+        "npm ci --prefix ../../universal-functions || npm install --prefix ../../universal-functions",
+        "npm ci --prefix ../../proxy-server || npm install --prefix ../../proxy-server",
+        "npm ci --prefix ../../auth-server || npm install --prefix ../../auth-server",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Kill all ports",
+      "commands": [
+        "fuser -n tcp -k 4500 ",
+        "fuser -n tcp -k 4501",
+        "fuser -n tcp -k 4502",
+        "fuser -n tcp -k 4503",
+        "fuser -n tcp -k 4504",
+        "fuser -n tcp -k 4505",
+        "fuser -n tcp -k 4506",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
     }
   ]
 }
