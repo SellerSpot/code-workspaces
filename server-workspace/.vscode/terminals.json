@@ -102,7 +102,6 @@
         "npm run yalc:link --prefix ../../database-models",
         "npm run yalc:link --prefix ../../universal-types",
         "npm run yalc:link --prefix ../../universal-functions",
-        "npm run yalc:link --prefix ../../proxy-server",
         "npm run yalc:link --prefix ../../auth-server",
         "exit"
       ],
