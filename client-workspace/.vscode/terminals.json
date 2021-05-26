@@ -72,6 +72,17 @@
       ],
       "onlySingle": true,
       "open": true
+    },
+
+    {
+      "name": "Yalc link all",
+      "commands": [
+        "npm run yalc:link --prefix ../../accounts-app",
+        "npm run yalc:link --prefix ../../core-app",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
     }
   ]
 }
