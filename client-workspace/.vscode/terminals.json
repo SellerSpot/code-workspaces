@@ -25,7 +25,7 @@
     },
 
     {
-      "name": "Sync upstream master",
+      "name": "Git pull upstream master",
       "commands": [
         "git -C ../../code-workspaces pull upstream master",
         "git -C ../../universal-components pull upstream master",
@@ -38,7 +38,7 @@
     },
 
     {
-      "name": "Sync origin master",
+      "name": "Git pull origin master",
       "commands": [
         "git -C ../../code-workspaces pull origin master",
         "git -C ../../universal-components pull origin master",
