@@ -37,6 +37,13 @@
       "onlyMultiple": true,
       "command": "npm run dev"
     },
+    {
+      "name": "catalogue-server",
+      "cwd": "../../catalogue-server",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
 
     {
       "name": "Git pull upstream master",
