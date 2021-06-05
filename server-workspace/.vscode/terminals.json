@@ -38,7 +38,7 @@
       "command": "npm run dev"
     },
     {
-      "name": "auth-server",
+      "name": "core-server",
       "cwd": "../../core-server",
       "open": true,
       "onlyMultiple": true,
@@ -52,7 +52,7 @@
       "command": "npm run dev"
     },
     {
-      "name": "catalogue-server",
+      "name": "pos-server",
       "cwd": "../../pos-server",
       "open": true,
       "onlyMultiple": true,
