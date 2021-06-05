@@ -38,8 +38,22 @@
       "command": "npm run dev"
     },
     {
+      "name": "auth-server",
+      "cwd": "../../core-server",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
+    {
       "name": "catalogue-server",
       "cwd": "../../catalogue-server",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
+    {
+      "name": "catalogue-server",
+      "cwd": "../../pos-server",
       "open": true,
       "onlyMultiple": true,
       "command": "npm run dev"
@@ -54,6 +68,9 @@
         "git -C ../../universal-functions pull upstream master",
         "git -C ../../proxy-server pull upstream master",
         "git -C ../../auth-server pull upstream master",
+        "git -C ../../core-server pull upstream master",
+        "git -C ../../catalogue-server pull upstream master",
+        "git -C ../../pos-server pull upstream master",
         "exit"
       ],
       "onlySingle": true,
@@ -69,6 +86,9 @@
         "git -C ../../universal-functions pull origin master",
         "git -C ../../proxy-server pull origin master",
         "git -C ../../auth-server pull origin master",
+        "git -C ../../core-server pull origin master",
+        "git -C ../../catalogue-server pull origin master",
+        "git -C ../../pos-server pull origin master",
         "exit"
       ],
       "onlySingle": true,
@@ -83,6 +103,9 @@
         "git -C ../../universal-functions push --all",
         "git -C ../../proxy-server push --all",
         "git -C ../../auth-server push --all",
+        "git -C ../../core-server push --all",
+        "git -C ../../catalgue-server push --all",
+        "git -C ../../pos-server push --all",
         "exit"
       ],
       "onlySingle": true,
@@ -97,6 +120,9 @@
         "npm ci --prefix ../../universal-functions || npm install --prefix ../../universal-functions",
         "npm ci --prefix ../../proxy-server || npm install --prefix ../../proxy-server",
         "npm ci --prefix ../../auth-server || npm install --prefix ../../auth-server",
+        "npm ci --prefix ../../core-server || npm install --prefix ../../core-server",
+        "npm ci --prefix ../../catalogue-server || npm install --prefix ../../catalogue-server",
+        "npm ci --prefix ../../pos-server || npm install --prefix ../../pos-server",
         "exit"
       ],
       "onlySingle": true,
@@ -110,6 +136,9 @@
         "npm run yalc:link --prefix ../../universal-types",
         "npm run yalc:link --prefix ../../universal-functions",
         "npm run yalc:link --prefix ../../auth-server",
+        "npm run yalc:link --prefix ../../core-server",
+        "npm run yalc:link --prefix ../../catalogue-server",
+        "npm run yalc:link --prefix ../../pos-server",
         "exit"
       ],
       "onlySingle": true,
