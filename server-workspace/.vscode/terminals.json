@@ -114,7 +114,7 @@
         "git -C ../../proxy-server push --all",
         "git -C ../../auth-server push --all",
         "git -C ../../core-server push --all",
-        "git -C ../../catalgue-server push --all",
+        "git -C ../../catalogue-server push --all",
         "git -C ../../pos-server push --all",
         "git -C ../../ecom-server push --all",
         "exit"
