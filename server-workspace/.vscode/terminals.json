@@ -58,6 +58,13 @@
       "onlyMultiple": true,
       "command": "npm run dev"
     },
+    {
+      "name": "ecom-server",
+      "cwd": "../../ecom-server",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
 
     {
       "name": "Git pull upstream master",
@@ -71,6 +78,7 @@
         "git -C ../../core-server pull upstream master",
         "git -C ../../catalogue-server pull upstream master",
         "git -C ../../pos-server pull upstream master",
+        "git -C ../../ecom-server pull upstream master",
         "exit"
       ],
       "onlySingle": true,
@@ -89,6 +97,7 @@
         "git -C ../../core-server pull origin master",
         "git -C ../../catalogue-server pull origin master",
         "git -C ../../pos-server pull origin master",
+        "git -C ../../ecom-server pull origin master",
         "exit"
       ],
       "onlySingle": true,
@@ -106,6 +115,7 @@
         "git -C ../../core-server push --all",
         "git -C ../../catalgue-server push --all",
         "git -C ../../pos-server push --all",
+        "git -C ../../ecom-server push --all",
         "exit"
       ],
       "onlySingle": true,
@@ -123,6 +133,7 @@
         "npm ci --prefix ../../core-server || npm install --prefix ../../core-server",
         "npm ci --prefix ../../catalogue-server || npm install --prefix ../../catalogue-server",
         "npm ci --prefix ../../pos-server || npm install --prefix ../../pos-server",
+        "npm ci --prefix ../../ecom-server || npm install --prefix ../../ecom-server",
         "exit"
       ],
       "onlySingle": true,
@@ -139,6 +150,7 @@
         "npm run yalc:link --prefix ../../core-server",
         "npm run yalc:link --prefix ../../catalogue-server",
         "npm run yalc:link --prefix ../../pos-server",
+        "npm run yalc:link --prefix ../../ecom-server",
         "exit"
       ],
       "onlySingle": true,
