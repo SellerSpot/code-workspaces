@@ -107,7 +107,7 @@
     {
       "name": "Git push all",
       "commands": [
-        "git -C ../../code-workspaces pull origin master",
+        "git -C ../../code-workspaces push origin master",
         "git -C ../../database-models push --all",
         "git -C ../../universal-types push --all",
         "git -C ../../universal-functions push --all",
