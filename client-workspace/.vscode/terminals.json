@@ -53,6 +53,7 @@
     {
       "name": "Git push all",
       "commands": [
+        "git -C ../../code-workspaces push --all",
         "git -C ../../universal-components push --all",
         "git -C ../../accounts-app push --all",
         "git -C ../../core-app push --all",
