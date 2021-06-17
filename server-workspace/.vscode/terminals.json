@@ -24,13 +24,6 @@
       "command": "npm run dev"
     },
     {
-      "name": "proxy-server",
-      "cwd": "../../proxy-server",
-      "open": true,
-      "onlyMultiple": true,
-      "command": "npm run dev"
-    },
-    {
       "name": "auth-server",
       "cwd": "../../auth-server",
       "open": true,
@@ -61,6 +54,13 @@
     {
       "name": "ecom-server",
       "cwd": "../../ecom-server",
+      "open": true,
+      "onlyMultiple": true,
+      "command": "npm run dev"
+    },
+    {
+      "name": "proxy-server",
+      "cwd": "../../proxy-server",
       "open": true,
       "onlyMultiple": true,
       "command": "npm run dev"

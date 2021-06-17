@@ -9,12 +9,12 @@
       "path": "../../database-models"
     },
     {
-      "name": "universal-functions",
-      "path": "../../universal-functions"
-    },
-    {
       "name": "universal-types",
       "path": "../../universal-types"
+    },
+    {
+      "name": "universal-functions",
+      "path": "../../universal-functions"
     },
     {
       "name": "auth-server",
@@ -41,6 +41,7 @@
       "path": "../../proxy-server"
     },
     {
+      "name": "webpack-run-scripts-custom-plugin",
       "path": "../../webpack-run-scripts-custom-plugin"
     }
   ],
