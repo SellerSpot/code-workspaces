@@ -105,6 +105,25 @@
     },
 
     {
+      "name": "Git pull origin dev",
+      "commands": [
+        "git -C ../../code-workspaces pull origin dev",
+        "git -C ../../database-models pull origin dev",
+        "git -C ../../universal-types pull origin dev",
+        "git -C ../../universal-functions pull origin dev",
+        "git -C ../../proxy-server pull origin dev",
+        "git -C ../../auth-server pull origin dev",
+        "git -C ../../core-server pull origin dev",
+        "git -C ../../catalogue-server pull origin dev",
+        "git -C ../../pos-server pull origin dev",
+        "git -C ../../ecom-server pull origin dev",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
       "name": "Git push all",
       "commands": [
         "git -C ../../code-workspaces push --all",
@@ -117,6 +136,44 @@
         "git -C ../../catalogue-server push --all",
         "git -C ../../pos-server push --all",
         "git -C ../../ecom-server push --all",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Git push origin master",
+      "commands": [
+        "git -C ../../code-workspaces push origin master",
+        "git -C ../../database-models push origin master",
+        "git -C ../../universal-types push origin master",
+        "git -C ../../universal-functions push origin master",
+        "git -C ../../proxy-server push origin master",
+        "git -C ../../auth-server push origin master",
+        "git -C ../../core-server push origin master",
+        "git -C ../../catalogue-server push origin master",
+        "git -C ../../pos-server push origin master",
+        "git -C ../../ecom-server push origin master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Git push origin dev",
+      "commands": [
+        "git -C ../../code-workspaces push origin dev",
+        "git -C ../../database-models push origin dev",
+        "git -C ../../universal-types push origin dev",
+        "git -C ../../universal-functions push origin dev",
+        "git -C ../../proxy-server push origin dev",
+        "git -C ../../auth-server push origin dev",
+        "git -C ../../core-server push origin dev",
+        "git -C ../../catalogue-server push origin dev",
+        "git -C ../../pos-server push origin dev",
+        "git -C ../../ecom-server push origin dev",
         "exit"
       ],
       "onlySingle": true,
