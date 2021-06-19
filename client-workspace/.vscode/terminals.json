@@ -51,12 +51,51 @@
     },
 
     {
+      "name": "Git pull origin dev",
+      "commands": [
+        "git -C ../../code-workspaces pull origin dev",
+        "git -C ../../universal-components pull origin dev",
+        "git -C ../../accounts-app pull origin dev",
+        "git -C ../../core-app pull origin dev",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
       "name": "Git push all",
       "commands": [
         "git -C ../../code-workspaces push --all",
         "git -C ../../universal-components push --all",
         "git -C ../../accounts-app push --all",
         "git -C ../../core-app push --all",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Git push origin master",
+      "commands": [
+        "git -C ../../code-workspaces push origin master",
+        "git -C ../../universal-components push origin master",
+        "git -C ../../accounts-app push origin master",
+        "git -C ../../core-app push origin master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+
+    {
+      "name": "Git push origin dev",
+      "commands": [
+        "git -C ../../code-workspaces push origin dev",
+        "git -C ../../universal-components push origin dev",
+        "git -C ../../accounts-app push origin dev",
+        "git -C ../../core-app push origin dev",
         "exit"
       ],
       "onlySingle": true,
