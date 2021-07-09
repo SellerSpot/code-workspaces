@@ -179,7 +179,101 @@
       "onlySingle": true,
       "open": true
     },
-
+    {
+      "name": "Git merge changes from dev to master",
+      "commands": [
+        "git -C ../../database-models checkout master",
+        "git -C ../../database-models merge dev",
+        "git -C ../../database-models checkout master",
+        "git -C ../../database-models merge dev",
+        "git -C ../../universal-types checkout master",
+        "git -C ../../universal-types merge dev",
+        "git -C ../../universal-functions checkout master",
+        "git -C ../../universal-functions merge dev",
+        "git -C ../../auth-server checkout master",
+        "git -C ../../auth-server merge dev",
+        "git -C ../../core-server checkout master",
+        "git -C ../../core-server merge dev",
+        "git -C ../../catalogue-server checkout master",
+        "git -C ../../catalogue-server merge dev",
+        "git -C ../../pos-server checkout master",
+        "git -C ../../pos-server merge dev",
+        "git -C ../../ecom-server checkout master",
+        "git -C ../../ecom-server merge dev",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+    {
+      "name": "Git merge changes from master to dev",
+      "commands": [
+        "git -C ../../database-models checkout dev",
+        "git -C ../../database-models merge master",
+        "git -C ../../database-models checkout dev",
+        "git -C ../../database-models merge master",
+        "git -C ../../universal-types checkout dev",
+        "git -C ../../universal-types merge master",
+        "git -C ../../universal-functions checkout dev",
+        "git -C ../../universal-functions merge master",
+        "git -C ../../auth-server checkout dev",
+        "git -C ../../auth-server merge master",
+        "git -C ../../core-server checkout dev",
+        "git -C ../../core-server merge master",
+        "git -C ../../catalogue-server checkout dev",
+        "git -C ../../catalogue-server merge master",
+        "git -C ../../pos-server checkout dev",
+        "git -C ../../pos-server merge master",
+        "git -C ../../ecom-server checkout dev",
+        "git -C ../../ecom-server merge master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+    {
+      "name": "Git checkout dev from master",
+      "commands": [
+        "git -C ../../database-models checkout master",
+        "git -C ../../database-models checkout dev || git -C ../../database-models checkout -b dev",
+        "git -C ../../database-models checkout master",
+        "git -C ../../database-models checkout dev || git -C ../../database-models checkout -b dev",
+        "git -C ../../universal-types checkout master",
+        "git -C ../../universal-types checkout dev || git -C ../../universal-types checkout -b dev",
+        "git -C ../../universal-functions checkout master",
+        "git -C ../../universal-functions checkout dev || git -C ../../universal-functions checkout -b dev",
+        "git -C ../../auth-server checkout master",
+        "git -C ../../auth-server checkout dev || git -C ../../auth-server checkout -b dev",
+        "git -C ../../core-server checkout master",
+        "git -C ../../core-server checkout dev || git -C ../../core-server checkout -b dev",
+        "git -C ../../catalogue-server checkout master",
+        "git -C ../../catalogue-server checkout dev || git -C ../../catalogue-server checkout -b dev",
+        "git -C ../../pos-server checkout master",
+        "git -C ../../pos-server checkout dev || git -C ../../pos-server checkout -b dev",
+        "git -C ../../ecom-server checkout master",
+        "git -C ../../ecom-server checkout dev || git -C ../../ecom-server checkout -b dev",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
+    {
+      "name": "Git checkout master",
+      "commands": [
+        "git -C ../../database-models checkout master",
+        "git -C ../../database-models checkout master",
+        "git -C ../../universal-types checkout master",
+        "git -C ../../universal-functions checkout master",
+        "git -C ../../auth-server checkout master",
+        "git -C ../../core-server checkout master",
+        "git -C ../../catalogue-server checkout master",
+        "git -C ../../pos-server checkout master",
+        "git -C ../../ecom-server checkout master",
+        "exit"
+      ],
+      "onlySingle": true,
+      "open": true
+    },
     {
       "name": "Npm install",
       "commands": [
